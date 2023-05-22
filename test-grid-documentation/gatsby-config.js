@@ -1,32 +1,17 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
     siteMetadata: {
-        title: `test grid documentation`,
-        // siteUrl: `https://www.yourdomain.tld`
+        title: 'My Gatsby Website',
     },
     plugins: [
+        'gatsby-plugin-react-helmet',
+        'gatsby-transformer-remark',
+        'gatsby-plugin-mdx',
         {
-            resolve: 'gatsby-plugin-mdx',
+            resolve: 'gatsby-source-filesystem',
             options: {
-                gatsbyRemarkPlugins: [
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            maxWidth: 800,
-                        },
-                    },
-                ],
+                name: 'content',
+                path: `${__dirname}/content`,
             },
         },
-        'gatsby-transformer-remark',
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `docs`,
-                path: `${__dirname}/src/pages`, // Specify the folder path where your MDX files are located
-            },
-        }
     ],
 };
