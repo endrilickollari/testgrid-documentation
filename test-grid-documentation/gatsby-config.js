@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'My Gatsby Website',
+        title: 'Test Grid Docs',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -13,5 +13,11 @@ module.exports = {
                 path: `${__dirname}/content`,
             },
         },
+        {
+            resolve: 'gatsby-plugin-theme-ui',
+            options: {
+                preset: '@theme-ui/preset-funk'
+            }
+        }
     ]
 };
