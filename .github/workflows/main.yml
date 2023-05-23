@@ -19,10 +19,10 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install --prefix test-grid-documentation/test-grid-documentation
+        run: npm install --prefix testgrid-documentation/test-grid-documentation
 
       - name: Build Gatsby site
-        run: npm run build --prefix test-grid-documentation/test-grid-documentation
+        run: npm run build --prefix testgrid-documentation/test-grid-documentation
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1
