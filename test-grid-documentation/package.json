@@ -1,0 +1,31 @@
+{
+  "name": "test-grid-documentation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "test-grid-documentation",
+  "author": "Endri Lickollari",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@theme-ui/core": "^0.15.7",
+    "@theme-ui/preset-funk": "^0.15.7",
+    "gatsby": "^5.10.0",
+    "gatsby-plugin-mdx": "^5.10.0",
+    "gatsby-plugin-react-helmet": "^6.10.0",
+    "gatsby-plugin-theme-ui": "^0.15.7",
+    "gatsby-source-filesystem": "^5.10.0",
+    "gatsby-transformer-remark": "^6.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "theme-ui": "^0.15.7"
+  }
+}

@@ -1,0 +1,15 @@
+/test-grid-documentation/.idea/
+/test-grid-documentation/node_modules
+/test-grid-documentation/.vscode/
+/test-grid-documentation/.cache
+/test-grid-documentation/public
+/.idea/aws.xml
+.vscode/settings.json
+.idea/codeStyles/Project.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/vcs.xml
+.idea/testgrid-documentation.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/.gitignore
