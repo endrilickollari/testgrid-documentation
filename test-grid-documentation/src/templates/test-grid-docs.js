@@ -1,10 +1,21 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+
+const TestGridDocsTemplate = ({ data }) => {
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
+
+  return (
+    <div>
+      <h1>{frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </div>
+  );
+};
 
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query ($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
       }
@@ -12,16 +23,5 @@ export const query = graphql`
     }
   }
 `;
-
-const TestGridDocsTemplate = ({ data }) => {
-    const { frontmatter, html } = data.markdownRemark;
-
-    return (
-        <Layout>
-            <h1>{frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: html }}></div>
-        </Layout>
-    );
-};
 
 export default TestGridDocsTemplate;
