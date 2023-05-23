@@ -24,6 +24,12 @@ jobs:
       - name: Build Gatsby site
         run: npm run build
 
+      - name: Create artifact
+        uses: actions/upload-artifact@v2
+        with:
+         name: gatsby-build
+         path: public
+
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1
         with:
