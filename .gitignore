@@ -1,8 +1,8 @@
-/test-grid-documentation/.idea/
-/test-grid-documentation/node_modules
-/test-grid-documentation/.vscode/
-/test-grid-documentation/.cache
-/test-grid-documentation/public
+/.idea/
+/node_modules
+/.vscode/
+/.cache
+/public
 /.idea/aws.xml
 .vscode/settings.json
 .idea/codeStyles/Project.xml
