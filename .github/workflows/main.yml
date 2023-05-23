@@ -29,5 +29,5 @@ jobs:
         with:
           publish-dir: public
           production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.NETLIFY_AUTH_TOKEN  }}
           enable-pull-request-comment: false
