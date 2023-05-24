@@ -3,6 +3,7 @@ title: Test Grid Documentation (how to properly grab elements manually)
 slug: /docs
 ---
 
+   ## Notion [link](https://www.notion.so/komodoplatform/Implement-Test-Grid-automations-ae4b6b28350b4e76ab500b01e5fdd513?pvs=4) for more details on implementation.
    ## 1. Go to Application
    - Open [TestGrid](https://dedicated3.testgrid.io/) Website.
    - Login with the correct credential.
