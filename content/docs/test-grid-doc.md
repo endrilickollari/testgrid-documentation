@@ -90,3 +90,19 @@ slug: /docs
      - Basically that is the safest way to do the catch of elements in Test Grid, you can use it in whatever way you want, but be aware that there are cases that after running the tests it will not be known as the element that was grabbed automatically by TestGrid.
    
 
+   # 6. Focus problems in WebDex native build
+
+   - In Android native builds in WebDex there might be cases where input forms might not be focused and user cannot type, for example:
+     
+     - If you want to type seed phase in this case here, because the element is not focused, you have to write a custom script than call it in the test case:
+       
+       ![WebDex](/images/webdex_input_not_focused)
+     
+     - If that's the case the custom script would have been like this:
+        
+       ```java
+       driver.findElement(By.xpath("//xPath of element")).click();
+       driver.getKeyboard().sendKeys("seed phase of wallet");
+       ```
+     
+     - Basically this script make possible that keyboard of phone will be visible and will be typed directly from keyboard, and the input will be focusable.
