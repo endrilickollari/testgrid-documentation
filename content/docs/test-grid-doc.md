@@ -96,7 +96,7 @@ slug: /docs
      
      - If you want to type seed phase in this case here, because the element is not focused, you have to write a custom script than call it in the test case:
        
-       ![WebDex](/images/webdex_input_not_focused)
+       ![WebDex](/images/webdex_input_not_focused.png)
      
      - If that's the case the custom script would have been like this:
         
