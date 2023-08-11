@@ -95,7 +95,7 @@ slug: /docs
      - Tap on Select element from list
      - A new view will appear with all the elements able to read:
        
-       ![Elements to read](/images/elements_to_read)
+       ![Elements to read](/images/elements_to_read.png)
      - After this there will be all the elements to read, with different attributes, from Xpath to cont-desc.
 
    # 6. Focus problems in WebDex native build
