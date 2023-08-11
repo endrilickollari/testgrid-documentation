@@ -88,7 +88,15 @@ slug: /docs
        ![CW TCG element grabber](/images/test_case_generator_element_grabber.png)
      - At the __By Full XPath__ write down: `//android.widget.ImageView@content-desc[contains(., "CREATE WALLET")]` and save, do not forget to name the element.
      - Basically that is the safest way to do the catch of elements in Test Grid, you can use it in whatever way you want, but be aware that there are cases that after running the tests it will not be known as the element that was grabbed automatically by TestGrid.
-   
+
+   - Another way is to tap second tab:
+     
+     ![Second way](/images/second_way_1.png)
+     - Tap on Select element from list
+     - A new view will appear with all the elements able to read:
+       
+       ![Elements to read](/images/elements_to_read)
+     - After this there will be all the elements to read, with different attributes, from Xpath to cont-desc.
 
    # 6. Focus problems in WebDex native build
 
